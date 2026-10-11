@@ -1,0 +1,1027 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 85px;
+}
+
+body {
+    color: #253449;
+    background: #fff;
+    line-height: 1.7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+button, .btn {
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    padding: 90px 0;
+}
+
+.section-light {
+    background: #f4f9fd;
+}
+
+/* Navbar */
+.header {
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px rgba(20, 50, 80, 0.07);
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #1266b2;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.2;
+    flex-shrink: 0;
+}
+
+.logo small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #6c8094;
+}
+
+.logo-icon {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    background: #e5f3ff;
+    border-radius: 12px;
+    color: #0875cf;
+    font-size: 30px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+.nav-links a:not(.btn) {
+    font-size: 13px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:not(.btn):hover {
+    color: #0875cf;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #1266b2;
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    border: 2px solid #0875cf;
+    border-radius: 7px;
+    padding: 12px 22px;
+    background: #0875cf;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #075ba2;
+    border-color: #075ba2;
+    transform: translateY(-2px);
+}
+
+.nav-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(120deg, #f1f9ff, #ffffff);
+    padding: 75px 0;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.tag {
+    display: inline-block;
+    color: #0875cf;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    color: #172d46;
+    font-size: clamp(38px, 4.5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #0875cf;
+}
+
+.hero-text > p {
+    color: #687c90;
+    font-size: 15px;
+    max-width: 520px;
+    margin-bottom: 28px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #0875cf;
+}
+
+.btn-outline:hover {
+    color: #fff;
+}
+
+.hero-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.hero-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-info strong {
+    font-size: 24px;
+    color: #1266b2;
+}
+
+.hero-info span {
+    font-size: 12px;
+    color: #6c8094;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.floating-card {
+    position: absolute;
+    bottom: 25px;
+    left: -25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #fff;
+    padding: 17px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(20, 50, 80, 0.12);
+}
+
+.check-icon {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    background: #dff8e9;
+    color: #159956;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.floating-card strong {
+    font-size: 13px;
+}
+
+.floating-card p {
+    color: #728398;
+    font-size: 12px;
+}
+
+/* Section Headings */
+.section-heading {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.section-heading h2, .about-text h2, .appointment-text h2 {
+    color: #172d46;
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+.section-heading p, .about-text > p {
+    color: #728398;
+    font-size: 14px;
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-image {
+    position: relative;
+    padding: 0 20px 20px 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.experience-card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: #0875cf;
+    color: #fff;
+    padding: 20px 27px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card strong {
+    font-size: 30px;
+}
+
+.experience-card span {
+    font-size: 12px;
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    margin-bottom: 22px;
+}
+
+.check-list {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.check-list li {
+    margin-bottom: 12px;
+    color: #40576d;
+    font-size: 14px;
+}
+
+.check-list li::first-letter {
+    color: #159956;
+}
+
+/* Services */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #e7eef5;
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(20, 50, 80, 0.09);
+    border-color: #b7dcfa;
+}
+
+.service-icon {
+    display: grid;
+    place-items: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    background: #e8f5ff;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 19px;
+    color: #172d46;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: #728398;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.service-card a {
+    color: #0875cf;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Doctors */
+.doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.doctor-card {
+    overflow: hidden;
+    border: 1px solid #e7eef5;
+    border-radius: 12px;
+    background: #fff;
+    transition: 0.25s;
+}
+
+.doctor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(20, 50, 80, 0.1);
+}
+
+.doctor-card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center top;
+    background: #eaf4fc;
+}
+
+.doctor-info {
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.doctor-info h3 {
+    color: #172d46;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.doctor-info p {
+    color: #0875cf;
+    font-size: 13px;
+}
+
+.doctor-info > span {
+    display: block;
+    color: #728398;
+    font-size: 11px;
+    margin: 8px 0 16px;
+}
+
+.btn-small {
+    padding: 8px 15px;
+    font-size: 12px;
+}
+
+/* Departments */
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.department-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #e1edf7;
+    background: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.25s;
+}
+
+.department-card:hover {
+    border-color: #0875cf;
+    color: #0875cf;
+    transform: translateY(-3px);
+}
+
+.department-card span {
+    font-size: 28px;
+}
+
+.department-card b {
+    margin-left: auto;
+    color: #0875cf;
+}
+
+/* Why Choose Us */
+.why-section {
+    background: #eaf6ff;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.why-card {
+    text-align: center;
+    background: #fff;
+    padding: 28px 18px;
+    border-radius: 12px;
+}
+
+.why-card > span {
+    font-size: 35px;
+}
+
+.why-card h3 {
+    color: #172d46;
+    font-size: 16px;
+    margin: 15px 0 10px;
+}
+
+.why-card p {
+    color: #728398;
+    font-size: 13px;
+}
+
+/* Appointment */
+.appointment-section {
+    background: #f8fbfe;
+}
+
+.appointment-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.appointment-text > p {
+    color: #728398;
+    font-size: 14px;
+    margin: 20px 0 30px;
+}
+
+.appointment-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.appointment-contact > span {
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+    background: #e1f1ff;
+    color: #0875cf;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.appointment-contact strong {
+    color: #172d46;
+}
+
+.appointment-contact p {
+    color: #728398;
+    font-size: 13px;
+}
+
+.appointment-form, .contact-form {
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e7eef5;
+    border-radius: 14px;
+    box-shadow: 0 8px 35px rgba(20, 50, 80, 0.05);
+}
+
+.appointment-form h3, .contact-form h3 {
+    color: #172d46;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    color: #344a60;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #dce6ef;
+    border-radius: 7px;
+    outline: none;
+    color: #253449;
+    background: #fff;
+    font-size: 13px;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #0875cf;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-btn {
+    width: 100%;
+}
+
+/* Testimonials */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.testimonial-card {
+    padding: 28px;
+    background: #fff;
+    border: 1px solid #e7eef5;
+    border-radius: 12px;
+}
+
+.stars {
+    color: #f4b400;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.testimonial-card > p {
+    color: #65788b;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card h3 {
+    color: #172d46;
+    font-size: 15px;
+}
+
+.testimonial-card span {
+    color: #0875cf;
+    font-size: 12px;
+}
+
+/* Contact */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.contact-info {
+    display: grid;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 17px;
+    align-items: flex-start;
+}
+
+.contact-item > span {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #e8f5ff;
+    font-size: 23px;
+}
+
+.contact-item h3 {
+    color: #172d46;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.contact-item p {
+    color: #728398;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.form-note {
+    margin-top: 12px;
+    color: #728398;
+    font-size: 11px;
+}
+
+/* Footer */
+.footer {
+    background: #14283e;
+    color: #d3dfeb;
+    padding-top: 60px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 35px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-logo small {
+    color: #b5c6d7;
+}
+
+.footer-about > p {
+    color: #b5c6d7;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.social-links a {
+    color: #c6d7e8;
+    font-size: 11px;
+}
+
+.social-links a:hover, .footer-links a:hover {
+    color: #70c3ff;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-links h3 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.footer-links a, .footer-links p {
+    color: #b5c6d7;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
+
+.footer-bottom {
+    border-top: 1px solid #304459;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #b5c6d7;
+    font-size: 12px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a:not(.btn) {
+        font-size: 12px;
+    }
+
+    .hero-content {
+        gap: 35px;
+    }
+
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-card > img {
+        height: 300px;
+    }
+
+    .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .appointment-grid {
+        gap: 35px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .section {
+        padding: 65px 0;
+    }
+
+    .navbar {
+        min-height: 70px;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 10px 20px rgba(20, 50, 80, 0.1);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 17px;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .nav-links a:not(.btn) {
+        display: block;
+        font-size: 14px;
+    }
+
+    .nav-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 55px 0;
+    }
+
+    .hero-content, .about-grid, .appointment-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-image > img {
+        height: 350px;
+    }
+
+    .floating-card {
+        left: 10px;
+        bottom: 12px;
+    }
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .service-grid, .department-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .doctor-card > img {
+        height: 240px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .appointment-form, .contact-form {
+        padding: 24px;
+    }
+
+    .footer-grid {
+        gap: 30px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo-icon {
+        width: 38px;
+        height: 38px;
+        font-size: 26px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero-text > p {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-info {
+        gap: 18px;
+    }
+
+    .hero-info strong {
+        font-size: 20px;
+    }
+
+    .hero-info span {
+        font-size: 10px;
+    }
+
+    .hero-image > img {
+        height: 280px;
+    }
+
+    .section-heading h2, .about-text h2, .appointment-text h2 {
+        font-size: 27px;
+    }
+
+    .service-grid, .doctor-grid, .department-grid, .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 23px;
+    }
+
+    .doctor-card > img {
+        height: 300px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+
+    .appointment-form, .contact-form {
+        padding: 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 15px 20px;
+    }
+}
+
+/* Accessibility */
+:focus-visible {
+    outline: 3px solid #65b9ff;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition: none !important;
+    }
+}
